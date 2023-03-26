@@ -15,4 +15,4 @@
 14. rm -rf .git (To remove all from git)
 15. git log -p (To see all commits with difference)
 16. git log -p -3 (To see 3 commits with difference)
-17. git log --stat (To see commits with difference with a short details)
+17. git log --stat (To see commits with difference with a short details)17. git log --stat (To see commits with difference with a short details)
