@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        :root{
+            --event:#721D49;
+        }
+        
+        .event-widget .event-25{
+            width: 25%;
+        }
+        .event-widget .event-25{
+            width: 75%;
+        }
+        .event-widget{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+        }
+        .event-title{
+            margin-top: 0px;
+        }
+        .signle-date{
+            width: 60px;
+            height: 60px;
+            background: var(--event);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .signle-date date{
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 26px;
+        }
+        .signle-date month{
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+        }
+        .btn-event-read{
+            padding: 12px 14px;
+            text-decoration: none;
+            border: 1px solid var(--event);
+            color: var(--event);
+            display: block;
+            width: 150px;
+            text-align: center;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .btn-event-read:hover{
+            background: var(--event);
+            color: #fff;
+        }
+        .full-date{
+            font-weight: 700;
+        }
+        .full-address{
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .event-row{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .event-col{
+            width: 50%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main-content">
+
+        <div class="event-row">
+            <div class="event-col">
+                <div class="event-widget">
+                    <div class="event-25">
+                        <div class="signle-date">
+                            <date>19</date>
+                            <month>APR</month>
+                        </div>
+                    </div>
+                    <div class="event-75">
+                        <h3 class="event-title">Decommissioning & Abandonment Gulf of Mexico (D&A GOM)</h3>
+                        <div class="full-date">
+                            <i class="fa fa-date"></i>
+                            <span>19-20 April 2023</span>
+                        </div>
+                        <div class="full-address">
+                            <i class="fa fa-location"></i>
+                            <span>The Westin Galleria Houston, Texas</span>
+                        </div>
+                        <div class="event-content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <a class="btn-event-read" href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="event-col">
+                <div class="event-widget">
+                    <div class="event-25">
+                        <div class="signle-date">
+                            <date>19</date>
+                            <month>APR</month>
+                        </div>
+                    </div>
+                    <div class="event-75">
+                        <h3 class="event-title">Decommissioning & Abandonment Gulf of Mexico (D&A GOM)</h3>
+                        <div class="full-date">
+                            <i class="fa fa-date"></i>
+                            <span>19-20 April 2023</span>
+                        </div>
+                        <div class="full-address">
+                            <i class="fa fa-location"></i>
+                            <span>The Westin Galleria Houston, Texas</span>
+                        </div>
+                        <div class="event-content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <a class="btn-event-read" href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="event-col">
+                <div class="event-widget">
+                    <div class="event-25">
+                        <div class="signle-date">
+                            <date>19</date>
+                            <month>APR</month>
+                        </div>
+                    </div>
+                    <div class="event-75">
+                        <h3 class="event-title">Decommissioning & Abandonment Gulf of Mexico (D&A GOM)</h3>
+                        <div class="full-date">
+                            <i class="fa fa-date"></i>
+                            <span>19-20 April 2023</span>
+                        </div>
+                        <div class="full-address">
+                            <i class="fa fa-location"></i>
+                            <span>The Westin Galleria Houston, Texas</span>
+                        </div>
+                        <div class="event-content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <a class="btn-event-read" href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="event-col">
+                <div class="event-widget">
+                    <div class="event-25">
+                        <div class="signle-date">
+                            <date>19</date>
+                            <month>APR</month>
+                        </div>
+                    </div>
+                    <div class="event-75">
+                        <h3 class="event-title">Decommissioning & Abandonment Gulf of Mexico (D&A GOM)</h3>
+                        <div class="full-date">
+                            <i class="fa fa-date"></i>
+                            <span>19-20 April 2023</span>
+                        </div>
+                        <div class="full-address">
+                            <i class="fa fa-location"></i>
+                            <span>The Westin Galleria Houston, Texas</span>
+                        </div>
+                        <div class="event-content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <a class="btn-event-read" href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    
+</body>
+</html>

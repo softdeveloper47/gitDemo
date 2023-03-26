@@ -1,0 +1,25 @@
+1. Get a qoute popup
+2. Banner (left text , right form)
+3. Services (Heading:Our guarentees , 3 points, 4 Services)
+    i. Web designing & development
+    ii. 
+
+
+
+Tailer
+Remove required (all-customers)             (Done)
+Auto generate close after all entries.      (After)
+Change positions (add customer)             (Done)
+add kera, kuff in customers                 (Done)
+Add popup in pending order (All detail)     (Done)
+
+
+
+
+
+
+
+
+Page-2
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<script src="https://cdn101.neuraldecisions.com/form/run.php?p=B1BCC306FD2044C79A7BA404A452C74B"></script>

@@ -1,0 +1,85 @@
+<?php 
+
+get_header(); 
+wp_head();
+?>
+<style>
+.single-event-banner{
+    background-image: url(https://haseebamjad.com/hbsgcc/wp-content/uploads/2023/03/hbs-banner.png);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.single-event-banner h2{
+    color: #FFFFFF;
+    font-family: "Libre Baskerville", Sans-serif;
+    font-size: 67px;
+    font-weight: 600;
+    text-align:center;
+}
+#main-event-content{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-row{
+   width: 70%;
+   padding-right: 75px;
+}
+.event-sidebar{
+    width: 30%;
+}
+.event-sidebar h2{
+    background: #a41034;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom:0;
+}
+.bg-div{
+    background: black;
+    color: white;
+    padding: 61px 20px;
+}
+.btn-event-read{
+    background-color: #fff;
+    text-decoration: none;
+    color: #c36;
+    padding: 9px 20px;
+    border-radius: 20px;
+}
+</style>
+<div class="single-event-banner">
+    <h2>Events Detail</h2>
+</div>
+<div id="main-event-content" class="elementor-container elementor-column-gap-default">
+    <div class="event-row">
+       <?php while ( have_posts() ){ the_post();
+       $postid = get_the_ID(); 
+       $thumbnail=get_the_post_thumbnail_url();
+       ?>
+       <h2><?php the_title(); ?></h2>
+       <img src="<?php echo $thumbnail; ?>">
+       <p><?php the_content(); ?></p>
+       <?php
+       }
+       ?>
+    </div>
+    <div class="event-sidebar">
+       <h2>DATE & LOCATION</h2>
+       <div class="bg-div">
+           <p><strong>Date</strong> <?php the_field('event-date'); ?></p>
+           <p><strong>Time:</strong><?php the_field('event_time'); ?> - <?php the_field('events_end_time'); ?></p>
+           <p style="margin-bottom: 40px;"><strong>Location:</strong><?php the_field('location'); ?></p>
+           <?php 
+           $link = get_field('registration_link');
+            if( $link ): ?>
+                <a class="btn-event-read" href="<?php echo esc_url( $link ); ?>"> REGISTER NOW</a>
+            <?php endif; ?>
+       </div>
+    </div>
+</div>
+<?php get_footer(); ?>
