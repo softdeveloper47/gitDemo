@@ -6,4 +6,5 @@
 5. touch .gitignore (To create a file named .gitignore. It will ignore all files from git which are written in it)
 6. git diff (To compare files of working directory and staging area)
 7. git diff --staged (To compare your previous commit with currently staging area)
-8. git add -a -m "Any commit" (To commit files directtly from only untracked area to commit area)
+8. git commit -a -m "Any commit" (To commit files directtly from only untracked area to commit area)
+9. git log (To see all commits)

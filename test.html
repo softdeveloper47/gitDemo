@@ -1,0 +1,254 @@
+<style>
+    *{
+                box-sizing: border-box;
+                transition: all 0.4s;
+            }
+    
+        .techno-container{
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+    
+        /* techno-navbar section */
+    
+        .techno-nav{
+            width: 100%;
+            /* height: 65px; */
+            position: fixed;
+            /* line-height: 65px; */
+        }
+    
+        .techno-nav div.techno-logo{
+            padding: 15px;
+            width: 20%;
+            background: #fff;
+            color:#000;
+    background:#fff;
+        }
+        .techno-nav div.techno-logo img{
+            width:100%;
+        }
+    
+        .techno-nav div.techno-logo a{
+            font-size: 16px;
+            color: #2A2A2A;
+            padding: 0 12px;
+            text-decoration: none;
+            font-size: 1.8em;
+            text-transform: uppercase;
+        }
+    
+        .techno-nav div.techno-logo a:hover {
+            color: #c0c0c0;
+        }
+    
+        .techno-nav div.main_list{
+            padding: 15px;
+            width: 80%;
+            background:#fff;
+        }
+    
+        .techno-nav div.main_list ul{
+            width:100%;
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            list-style: none;
+            margin:0;
+            padding: 0;
+        }
+    
+        .techno-nav div.main_list ul li{
+            /* width: 120px;
+            height: 65px; */
+            display: inline-block;
+        }
+    
+        .techno-nav div.main_list ul li a{
+            text-decoration: none;
+            font-family: Open Sans !important;
+            font-size:16px;
+            font-weight:400;
+            line-height:21.79;
+            color: #000;
+            padding: 0 12px;
+            text-transform: uppercase;
+        }
+    
+        .techno-nav div.main_list ul li a:hover{
+            color: #c0c0c0;
+        }
+    
+        .techno-nav div.media_button {
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            position: absolute;
+            right: 15px;
+            top: 12px;
+            display: none;
+        }
+    
+        .techno-nav div.media_button button.main_media_button {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;;
+            outline: 0;
+            border: none;
+            cursor: pointer;
+        }
+    
+        .techno-nav div.media_button button.main_media_button span{
+                width: 100%;
+                height: 4px;
+                display: block;
+            border-radius: 30%;
+            background-color: #000;
+            margin-top: 9px;
+            margin-bottom: 10px;
+        }
+    
+        .techno-nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+            transform: rotateY(180deg);
+            transition: all 0.5s;
+            background-color: #000;
+        }
+    
+        .techno-nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+            transform: rotateY(180deg);
+            transition: all 0.4s;
+            background-color: #000;
+        }
+    
+        .techno-nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+            transform: rotateY(180deg);
+            transition: all 0.3s;
+            background-color: #EF5537 !important;
+        }
+    
+        .techno-nav div.media_button button.active span:nth-of-type(1) {
+            transform: rotate3d(0, 0, 1, 45deg);
+            position: absolute;
+            margin: 0;
+        }
+    
+        .techno-nav div.media_button button.active span:nth-of-type(2) {
+            display: none;
+        }
+    
+        .techno-nav div.media_button button.active span:nth-of-type(3) {
+            transform: rotate3d(0, 0, 1, -45deg);
+            position: absolute;
+            margin: 0;
+        }
+    
+        .techno-nav div.media_button button.active:hover span:nth-of-type(1) {
+            transform: rotate3d(0, 0, 1, 35deg);
+        }
+    
+        .techno-nav div.media_button button.active:hover span:nth-of-type(3) {
+            transform: rotate3d(0, 0, 1, -35deg);
+        }
+    
+        
+    
+        /* Medai qurey section */
+    
+    @media screen and (max-width:768px) {
+        
+        .techno-container{
+            margin: 0;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        
+        .techno-nav div.techno-logo{
+          width:40%;
+            margin-left: 15px;
+        }
+        
+        .techno-nav div.main_list{
+            width: 100%;
+            padding: 0;
+            height: 0px;
+            overflow: hidden;
+            background:rgba(239, 85, 55, 0.8) !important
+        }
+        
+        .techno-nav div.show_list{
+            /* height: 200px; */
+            height: auto;
+        }
+        
+        .techno-nav div.main_list ul{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 90vh;
+            top: 80px;
+            right: 0;
+            left: 0;
+        }
+        
+        .techno-nav div.main_list ul li{
+            width: 100%;
+        }
+        
+        .techno-nav div.main_list ul li a{
+          text-align: center;
+            line-height: 40px;
+            font-weight:600;
+            width: 100%;
+            height: 40px;
+            color:#fff;
+            display: table;
+        }
+        
+        .techno-nav div.media_button{
+            display: block;
+        }
+    }
+            </style>
+    
+    <techno-nav class="techno-nav">
+                <div class="techno-container">
+                    <div class="techno-logo">
+                        <a href="#"><img class="img-with-animation skip-lazy " data-delay="0" height="70" width="364" data-animation="none" src="https://mmstag.mysterymonks.com/wp-content/uploads/2019/12/Header-Logo.png" alt="" srcset="https://mmstag.mysterymonks.com/wp-content/uploads/2019/12/Header-Logo.png 364w, https://mmstag.mysterymonks.com/wp-content/uploads/2019/12/Header-Logo-360x70.png 360w, https://mmstag.mysterymonks.com/wp-content/uploads/2019/12/Header-Logo-350x67.png 350w, https://mmstag.mysterymonks.com/wp-content/uploads/2019/12/Header-Logo-300x58.png 300w" sizes="(max-width: 364px) 100vw, 364px"></a>
+                    </div>
+                    <div class="main_list" id="mainListDiv">
+                        <ul id="menu-portfolio-landing-page" class="menu"><li id="menu-item-25698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25698"><a href="#home">Home</a></li>
+                            <li id="menu-item-25699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25699"><a href="#our-client">Our Client</a></li>
+                            <li id="menu-item-25700" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25700"><a href="#our-portfolio">Our Portfolio</a></li>
+                            <li id="menu-item-25701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25701"><a href="#about-us">About Us</a></li>
+                            <li id="menu-item-25702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25702"><a href="#why-us">Why Us</a></li>
+                            <li id="menu-item-25703" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25703"><a href="#types-of-videos">Types of videos</a></li>
+                            <li id="menu-item-25704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25704"><a href="#reviews">Reviews</a></li>
+                            <li id="menu-item-25705" class="popmake-25646 get-a-quote menu-item menu-item-type-custom menu-item-object-custom menu-item-25705 pum-trigger" style="cursor: pointer;"><a href="#">Get a Quote</a></li>
+                        </ul>
+                    </div>
+                    <div class="media_button">
+                        <button class="main_media_button" id="mediaButton">
+                            <span></span>
+                            <span style="width: 70%;margin-left: auto;"></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </techno-nav>
+    
+    <script>
+            var mainListDiv = document.getElementById("mainListDiv"),
+            mediaButton = document.getElementById("mediaButton");
+    
+            mediaButton.onclick = function () {
+                
+                "use strict";
+                
+                mainListDiv.classList.toggle("show_list");
+                mediaButton.classList.toggle("active");
+                
+            };
+    </script>
